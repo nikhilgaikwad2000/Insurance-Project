@@ -1,0 +1,15 @@
+server:
+  port: 7072
+spring:
+  application:
+    name: user-service.com
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+management:
+ endpoints:
+    web:
+      exposure:
+        include: '*'
+  
