@@ -1,0 +1,8 @@
+Hi ${FNAME} ${LNAME} <br/>
+<br/>
+Welcome to Ashok IT family , your regestration is almost completed. <br/>
+<br/>
+please unlock your account using below details.</br>
+Temporary Pwd:${TEMP_PWD} <br/>
+
+<a href="http://localhost:4200/unlock?email=${EMAIL}">Click here to unlock<a/>
