@@ -1,0 +1,14 @@
+server:
+  port: 7071
+spring:
+  application:
+    name: welcome-service.com
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+management:
+ endpoints:
+    web:
+      exposure:
+        include: '*'
