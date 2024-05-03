@@ -1,0 +1,20 @@
+server:
+  port: 2222
+spring:
+  cloud:
+    gateway:
+      discovery.locator:
+        enabled: true
+        lowerCaseServiceId: true
+      routes:
+
+      - id: welcome-api
+        uri: lb://welcome-service.com
+        predicates:
+        - Path=/welcome
+      - id: user-api
+        uri: lb://user-service.com
+        predicates:
+        - Path=/user
+  application:
+    name: cloud-apigetway-service.com
